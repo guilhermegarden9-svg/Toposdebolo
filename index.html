@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Mega Pack de Topos Editáveis com milhares de temas, fontes, imagens PNG e aulas para personalização." />
+  <meta name="theme-color" content="#6d4aff" />
+  <title>Topos Editáveis — Mega Pack Premium</title>
+  <link rel="preconnect" href="https://saboreamorpaes.com.br" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --bg:#fbfaff;
+      --surface:#ffffff;
+      --surface-2:#f5f1ff;
+      --ink:#1d1830;
+      --muted:#6d6880;
+      --line:#e7e1f3;
+      --primary:#6d4aff;
+      --primary-2:#8c6dff;
+      --accent:#ff5f8f;
+      --accent-2:#ff8a63;
+      --success:#18a66a;
+      --dark:#211a3a;
+      --shadow:0 22px 70px rgba(72,50,125,.14);
+      --radius:28px;
+      --container:1160px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55;overflow-x:hidden}
+    img,video{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    button,a{ -webkit-tap-highlight-color:transparent }
+    .container{width:min(calc(100% - 36px),var(--container));margin-inline:auto}
+    .announcement{background:#201a38;color:#fff;text-align:center;padding:10px 16px;font-size:13px;font-weight:800;letter-spacing:.02em}
+    .announcement span{color:#ffb3cb}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:950;letter-spacing:-.03em;font-size:20px}
+    .brand-mark{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--primary),#b69dff);display:grid;place-items:center;color:#fff;box-shadow:0 8px 25px rgba(109,74,255,.28)}
+    .nav-links{display:flex;align-items:center;gap:22px;color:var(--muted);font-size:14px;font-weight:700}
+    .nav-links a:hover{color:var(--primary)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 24px;border-radius:16px;font-weight:900;border:0;cursor:pointer;transition:.2s ease;box-shadow:none}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff;box-shadow:0 15px 35px rgba(109,74,255,.28)}
+    .btn-secondary{background:#fff;color:var(--ink);border:1px solid var(--line)}
+    .btn-sm{min-height:44px;padding:0 18px;border-radius:13px;font-size:14px}
+
+    .hero{position:relative;padding:64px 0 76px;isolation:isolate}
+    .hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(151,118,255,.23),rgba(151,118,255,0) 68%);top:-140px;right:-120px;z-index:-1}
+    .hero::after{content:"";position:absolute;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(255,95,143,.14),rgba(255,95,143,0) 70%);bottom:-150px;left:-170px;z-index:-1}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;background:#efeaff;color:#5b3be0;border:1px solid #ded3ff;padding:8px 12px;border-radius:999px;font-size:13px;font-weight:900;margin-bottom:18px}
+    h1,h2,h3,p{margin-top:0}
+    h1{font-size:clamp(42px,6vw,72px);line-height:.98;letter-spacing:-.055em;margin-bottom:22px}
+    h1 .grad{background:linear-gradient(110deg,var(--primary),#a35cff 52%,var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero-copy>p{font-size:clamp(18px,2vw,21px);color:var(--muted);max-width:660px;margin-bottom:28px}
+    .hero-list{display:grid;gap:12px;margin:0 0 30px;padding:0;list-style:none}
+    .hero-list li{display:flex;align-items:flex-start;gap:10px;font-weight:750;color:#393347}
+    .check{flex:0 0 22px;width:22px;height:22px;border-radius:50%;background:#e5f8ef;color:var(--success);display:grid;place-items:center;font-size:13px;font-weight:950;margin-top:2px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+    .micro{margin-top:14px;color:var(--muted);font-size:13px;font-weight:650;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+    .hero-media{position:relative}
+    .product-shell{background:linear-gradient(145deg,#fff,#f2edff);padding:18px;border:1px solid #e8e0fb;border-radius:32px;box-shadow:var(--shadow);transform:rotate(1deg)}
+    .product-shell img{width:100%;border-radius:22px;aspect-ratio:1/1;object-fit:cover}
+    .float-card{position:absolute;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px 16px;box-shadow:0 18px 45px rgba(48,35,87,.15);font-size:13px;font-weight:800}
+    .float-card strong{display:block;font-size:20px;letter-spacing:-.03em;color:var(--ink)}
+    .float-one{left:-28px;bottom:48px}
+    .float-two{right:-24px;top:36px}
+
+    .trust{padding:12px 0 58px}
+    .trust-row{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:24px;background:#fff;overflow:hidden;box-shadow:0 10px 35px rgba(60,42,100,.06)}
+    .trust-item{padding:24px 18px;text-align:center;border-right:1px solid var(--line)}
+    .trust-item:last-child{border-right:0}
+    .trust-item strong{display:block;font-size:24px;letter-spacing:-.035em}
+    .trust-item span{display:block;color:var(--muted);font-size:13px;margin-top:4px;font-weight:700}
+
+    section{padding:88px 0}
+    .section-soft{background:var(--surface-2)}
+    .section-dark{background:var(--dark);color:#fff;position:relative;overflow:hidden}
+    .section-dark::after{content:"";position:absolute;inset:auto -120px -250px auto;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(141,109,255,.35),transparent 70%)}
+    .section-head{max-width:760px;margin:0 auto 44px;text-align:center}
+    .kicker{color:var(--primary);font-size:13px;font-weight:950;text-transform:uppercase;letter-spacing:.12em;margin-bottom:10px}
+    .section-head h2{font-size:clamp(32px,5vw,52px);line-height:1.04;letter-spacing:-.045em;margin-bottom:16px}
+    .section-head p{color:var(--muted);font-size:18px;margin-bottom:0}
+    .section-dark .section-head p{color:#c8c0df}
+
+    .benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .benefit{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 12px 35px rgba(54,41,89,.05)}
+    .icon{width:48px;height:48px;border-radius:15px;background:#efeaff;color:var(--primary);display:grid;place-items:center;font-size:23px;margin-bottom:18px}
+    .benefit h3{font-size:21px;letter-spacing:-.025em;margin-bottom:8px}
+    .benefit p{color:var(--muted);margin:0}
+
+    .gallery{display:grid;grid-template-columns:1.1fr .9fr .9fr;grid-template-rows:220px 220px;gap:14px}
+    .gallery figure{margin:0;border-radius:22px;overflow:hidden;background:#eee;border:1px solid #e8e2f1;box-shadow:0 12px 30px rgba(58,43,90,.08)}
+    .gallery figure:first-child{grid-row:1/3}
+    .gallery img{width:100%;height:100%;object-fit:cover}
+    .gallery-note{text-align:center;color:var(--muted);font-size:14px;font-weight:650;margin-top:16px}
+
+    .bonus-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;position:relative;z-index:1}
+    .bonus{display:grid;grid-template-columns:170px 1fr;gap:22px;align-items:center;background:#2b2347;border:1px solid rgba(255,255,255,.09);border-radius:26px;padding:16px}
+    .bonus img{width:170px;height:130px;object-fit:cover;border-radius:18px;background:#fff}
+    .bonus .tag{display:inline-flex;background:rgba(255,255,255,.09);padding:5px 9px;border-radius:999px;font-size:11px;font-weight:900;color:#d9d0f3;margin-bottom:9px}
+    .bonus h3{font-size:20px;margin-bottom:7px;letter-spacing:-.025em}
+    .bonus p{color:#c8c0df;font-size:14px;margin:0}
+
+    .video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .video-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:14px;box-shadow:0 14px 40px rgba(58,43,90,.08)}
+    .video-card video{width:100%;aspect-ratio:9/16;max-height:620px;object-fit:cover;border-radius:18px;background:#111}
+    .video-card p{margin:14px 6px 4px;color:var(--muted);text-align:center;font-weight:750}
+
+    .offer-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:center}
+    .offer-visual{background:#fff;border-radius:30px;padding:16px;border:1px solid var(--line);box-shadow:var(--shadow)}
+    .offer-visual img{width:100%;border-radius:20px;max-height:720px;object-fit:contain;background:#faf8ff}
+    .offer-box{background:#fff;border:1px solid var(--line);border-radius:30px;padding:34px;box-shadow:var(--shadow)}
+    .offer-badge{display:inline-flex;background:#fff0f5;color:#d9316a;border:1px solid #ffd5e3;border-radius:999px;padding:7px 11px;font-size:12px;font-weight:950;margin-bottom:14px}
+    .offer-box h2{font-size:clamp(34px,4vw,48px);line-height:1.02;letter-spacing:-.04em;margin-bottom:12px}
+    .offer-box>p{color:var(--muted);font-size:17px}
+    .offer-items{display:grid;gap:11px;margin:22px 0 28px;padding:0;list-style:none}
+    .offer-items li{display:flex;gap:10px;font-weight:750}
+    .offer-box .btn{width:100%;min-height:60px;font-size:17px}
+    .payment-note{text-align:center;color:var(--muted);font-size:12px;font-weight:650;margin:12px 0 0}
+    .alt-link{display:block;text-align:center;margin-top:15px;color:var(--primary);font-weight:850;font-size:14px}
+
+    .guarantee{display:grid;grid-template-columns:250px 1fr;gap:34px;align-items:center;background:linear-gradient(135deg,#282044,#1e1834);padding:36px;border-radius:30px;position:relative;z-index:1}
+    .guarantee img{width:220px;margin:auto;filter:drop-shadow(0 16px 30px rgba(0,0,0,.25))}
+    .guarantee .kicker{color:#ff9fba}
+    .guarantee h2{font-size:clamp(34px,5vw,52px);letter-spacing:-.045em;line-height:1.04;margin-bottom:12px}
+    .guarantee p{color:#d8d0eb;font-size:17px;margin-bottom:0}
+
+    .faq{max-width:880px;margin:auto;display:grid;gap:12px}
+    details{background:#fff;border:1px solid var(--line);border-radius:18px;padding:0 20px}
+    summary{cursor:pointer;list-style:none;font-weight:850;padding:20px 34px 20px 0;position:relative}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:"+";position:absolute;right:0;top:14px;font-size:25px;color:var(--primary)}
+    details[open] summary::after{content:"–"}
+    details p{color:var(--muted);margin:0 0 20px}
+
+    .final-cta{text-align:center;background:linear-gradient(140deg,#f0ebff,#fff0f5);border:1px solid #e6dcff;border-radius:34px;padding:56px 28px}
+    .final-cta h2{font-size:clamp(34px,5vw,52px);letter-spacing:-.045em;line-height:1.04;max-width:800px;margin:0 auto 16px}
+    .final-cta p{color:var(--muted);max-width:680px;margin:0 auto 26px;font-size:17px}
+    footer{padding:32px 0 100px;color:var(--muted);font-size:13px;text-align:center}
+    .mobile-bar{display:none}
+
+    @media (max-width:960px){
+      .nav-links{display:none}
+      .hero{padding-top:42px}
+      .hero-grid,.offer-wrap{grid-template-columns:1fr;gap:38px}
+      .hero-copy{text-align:center}
+      .hero-copy>p{margin-inline:auto}
+      .hero-list{max-width:620px;margin-inline:auto;text-align:left}
+      .hero-actions{justify-content:center}
+      .micro{justify-content:center}
+      .hero-media{max-width:720px;margin:auto}
+      .float-one{left:8px}.float-two{right:8px}
+      .benefit-grid{grid-template-columns:1fr 1fr}
+      .bonus-grid{grid-template-columns:1fr}
+      .offer-visual{max-width:620px;margin:auto}
+    }
+    @media (max-width:720px){
+      .container{width:min(calc(100% - 28px),var(--container))}
+      .nav{height:62px}
+      .brand{font-size:17px}.brand-mark{width:32px;height:32px;border-radius:10px}
+      .nav .btn{display:none}
+      .hero{padding:40px 0 52px}
+      h1{font-size:43px}
+      .hero-copy>p{font-size:17px}
+      .hero-actions{display:grid;grid-template-columns:1fr;width:100%}
+      .hero-actions .btn{width:100%}
+      .float-card{position:static;display:inline-block;margin:12px 6px 0 0}
+      .product-shell{transform:none;padding:10px;border-radius:24px}
+      .product-shell img{border-radius:17px}
+      .trust{padding-bottom:28px}
+      .trust-row{grid-template-columns:1fr 1fr}
+      .trust-item{border-bottom:1px solid var(--line)}
+      .trust-item:nth-child(2){border-right:0}
+      .trust-item:nth-child(3),.trust-item:nth-child(4){border-bottom:0}
+      section{padding:64px 0}
+      .section-head{margin-bottom:32px}
+      .section-head p{font-size:16px}
+      .benefit-grid{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr 1fr;grid-template-rows:240px 190px 190px}
+      .gallery figure:first-child{grid-column:1/3;grid-row:auto}
+      .bonus{grid-template-columns:110px 1fr;gap:14px}
+      .bonus img{width:110px;height:100px}
+      .video-grid{grid-template-columns:1fr 1fr;gap:10px}
+      .video-card{padding:8px;border-radius:18px}.video-card video{border-radius:13px}.video-card p{font-size:12px}
+      .offer-box{padding:26px 20px;border-radius:24px}
+      .guarantee{grid-template-columns:1fr;text-align:center;padding:28px 20px}
+      .guarantee img{width:170px}
+      .final-cta{padding:42px 20px}
+      footer{padding-bottom:110px}
+      .mobile-bar{display:flex;position:fixed;left:10px;right:10px;bottom:max(10px,env(safe-area-inset-bottom));z-index:50;background:rgba(31,24,54,.96);backdrop-filter:blur(10px);padding:10px;border-radius:18px;box-shadow:0 18px 45px rgba(20,14,40,.28);align-items:center;gap:10px}
+      .mobile-bar .copy{color:#fff;min-width:0;flex:1;padding-left:6px}
+      .mobile-bar strong{display:block;font-size:13px}.mobile-bar span{display:block;color:#c9c0de;font-size:10px}
+      .mobile-bar .btn{min-height:46px;padding:0 14px;border-radius:12px;font-size:12px;white-space:nowrap}
+    }
+    @media (max-width:460px){
+      .announcement{font-size:11px}
+      h1{font-size:38px}
+      .eyebrow{font-size:11px}
+      .trust-item strong{font-size:20px}
+      .trust-item span{font-size:11px}
+      .gallery{grid-template-rows:220px 150px 150px}
+      .bonus{grid-template-columns:1fr}
+      .bonus img{width:100%;height:180px}
+      .video-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement">✨ Oferta especial: leve o <span>Pack Premium</span> com bônus e acesso imediato</div>
+
+  <header class="container nav">
+    <a class="brand" href="#topo" aria-label="Topos Editáveis">
+      <span class="brand-mark">✦</span>
+      <span>Topos Editáveis</span>
+    </a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#conteudo">O que vem</a>
+      <a href="#bonus">Bônus</a>
+      <a href="#oferta">Oferta</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="#oferta">Quero o Pack</a>
+  </header>
+
+  <main id="topo">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">💜 MEGA PACK PARA PAPELARIA E CONFEITARIA</div>
+          <h1>Crie topos incríveis <span class="grad">sem começar do zero.</span></h1>
+          <p>Tenha uma biblioteca pronta para acelerar sua produção, personalizar pedidos e encontrar temas para diferentes ocasiões em poucos minutos.</p>
+          <ul class="hero-list">
+            <li><span class="check">✓</span><span><strong>Milhares de topos editáveis</strong> reunidos em um único lugar.</span></li>
+            <li><span class="check">✓</span><span><strong>Bônus de fontes, letras 3D e imagens PNG</strong> para ampliar suas criações.</span></li>
+            <li><span class="check">✓</span><span><strong>Aulas práticas</strong> para editar pelo celular e criar nomes em 3D no Canva.</span></li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#oferta">LIBERAR MEU ACESSO →</a>
+            <a class="btn btn-secondary" href="#conteudo">Ver tudo que eu recebo</a>
+          </div>
+          <div class="micro">🔒 Compra segura &nbsp;•&nbsp; ⚡ Acesso digital &nbsp;•&nbsp; 🛡️ Garantia de 30 dias</div>
+        </div>
+
+        <div class="hero-media">
+          <div class="product-shell">
+            <img src="https://saboreamorpaes.com.br/wp-content/uploads/2026/07/1-1024x1024.png" alt="Apresentação do pack de topos editáveis" fetchpriority="high" />
+          </div>
+          <div class="float-card float-one"><strong>20 mil+</strong>topos para explorar</div>
+          <div class="float-card float-two"><strong>+ bônus</strong>para produzir mais rápido</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container trust" aria-label="Resumo do conteúdo">
+      <div class="trust-row">
+        <div class="trust-item"><strong>20 mil+</strong><span>Topos de bolos</span></div>
+        <div class="trust-item"><strong>60 mil</strong><span>Fontes premium</span></div>
+        <div class="trust-item"><strong>1.000</strong><span>Letras 3D</span></div>
+        <div class="trust-item"><strong>30 mil+</strong><span>Imagens PNG</span></div>
+      </div>
+    </div>
+
+    <section id="conteudo" class="section-soft">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Feito para facilitar sua rotina</div>
+          <h2>Mais opções na mão. Menos tempo procurando arquivo.</h2>
+          <p>Em vez de montar cada arte do zero, você parte de materiais prontos e concentra seu tempo na personalização do pedido.</p>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit"><div class="icon">⚡</div><h3>Produza com mais agilidade</h3><p>Escolha um tema, personalize e avance para o próximo pedido sem perder horas em pesquisas.</p></article>
+          <article class="benefit"><div class="icon">🎨</div><h3>Variedade para diferentes temas</h3><p>Tenha uma biblioteca ampla para atender festas, datas comemorativas e estilos variados.</p></article>
+          <article class="benefit"><div class="icon">📱</div><h3>Edite até pelo celular</h3><p>As aulas do pack mostram como adaptar e criar novos materiais usando ferramentas acessíveis.</p></article>
+          <article class="benefit"><div class="icon">🧩</div><h3>Monte novas composições</h3><p>Combine fontes, PNGs, letras 3D e elementos para criar versões personalizadas dos seus topos.</p></article>
+          <article class="benefit"><div class="icon">🗂️</div><h3>Tudo reunido em um só lugar</h3><p>Menos links espalhados e mais praticidade para acessar seu acervo quando precisar.</p></article>
+          <article class="benefit"><div class="icon">💼</div><h3>Ideal para quem vende personalizados</h3><p>Uma base pronta ajuda a responder mais rápido aos pedidos e ampliar o catálogo oferecido.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Veja alguns materiais</div>
+          <h2>Um acervo visual pensado para quem precisa de variedade.</h2>
+          <p>Alguns dos conteúdos apresentados na página original, agora organizados de forma mais clara.</p>
+        </div>
+        <div class="gallery">
+          <figure><img loading="lazy" src="https://saboreamorpaes.com.br/wp-content/uploads/2025/08/20MIL-TOPOS-DE-BOLOS-17-442x1024.png" alt="Pack com milhares de topos de bolo" /></figure>
+          <figure><img loading="lazy" src="https://saboreamorpaes.com.br/wp-content/uploads/2025/08/Cabecalho-4-576x1024.png" alt="Exemplo de conteúdo do pack" /></figure>
+          <figure><img loading="lazy" src="https://saboreamorpaes.com.br/wp-content/uploads/2025/08/Cabecalho-5-576x1024.png" alt="Exemplo de conteúdo do pack" /></figure>
+          <figure><img loading="lazy" src="https://saboreamorpaes.com.br/wp-content/uploads/2025/08/Cabecalho-10-576x1024.png" alt="Exemplo de conteúdo do pack" /></figure>
+          <figure><img loading="lazy" src="https://saboreamorpaes.com.br/wp-content/uploads/2025/08/Cabecalho-7-1-1024x970.png" alt="Exemplo de conteúdo do pack" /></figure>
+        </div>
+        <div class="gallery-note">Os arquivos e imagens exibidos acima são os mesmos materiais referenciados na página atual.</div>
+      </div>
+    </section>
+
+    <section id="bonus" class="section-dark">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker" style="color:#ff9db9">Bônus incluídos</div>
+          <h2>O pack vai além dos topos.</h2>
+          <p>Você também recebe materiais complementares para personalizar, criar novas composições e trabalhar com mais liberdade.</p>
+        </div>
+        <div class="bonus-grid">
+          <article class="bonus">
+            <img loading="lazy" src="https://saboreamorpaes.com.br/wp-content/uploads/2025/08/super-pack-de-100-mil-fontes-arquivo-de-corte-1024x576.webp" alt="Pack de fontes premium" />
+            <div><span class="tag">BÔNUS</span><h3>60 mil Fontes Premium</h3><p>Mais opções de tipografia para combinar com temas e estilos diferentes.</p></div>
+          </article>
+          <article class="bonus">
+            <img loading="lazy" src="https://saboreamorpaes.com.br/wp-content/uploads/2025/08/DIVERTIDAMENTE-2-4-1-1024x728.png" alt="Letras 3D" />
+            <div><span class="tag">BÔNUS</span><h3>1.000 Letras 3D</h3><p>Alfabetos e estilos prontos para usar nas suas composições personalizadas.</p></div>
+          </article>
+          <article class="bonus">
+            <img loading="lazy" src="https://saboreamorpaes.com.br/wp-content/uploads/2025/08/DIVERTIDAMENTE-2-5-1-1024x779.png" alt="Imagens PNG sem fundo" />
+            <div><span class="tag">BÔNUS</span><h3>Imagens PNG sem fundo</h3><p>Elementos em alta resolução para montar artes, temas e variações de forma mais rápida.</p></div>
+          </article>
+          <article class="bonus">
+            <img loading="lazy" src="https://saboreamorpaes.com.br/wp-content/uploads/2025/08/DIVERTIDAMENTE-2-7-1-1024x938.png" alt="Mega pack de arquivos" />
+            <div><span class="tag">PREMIUM</span><h3>Mega Pack de Arquivos</h3><p>Temas, personagens, elementos, fundos e outros materiais para papelaria e confeitaria.</p></div>
+          </article>
+          <article class="bonus">
+            <img loading="lazy" src="https://saboreamorpaes.com.br/wp-content/uploads/2025/08/DIVERTIDAMENTE-2-6-2-1-1012x1024.png" alt="Curso de edição de topos" />
+            <div><span class="tag">PREMIUM</span><h3>Curso de Edição de Topos</h3><p>Aulas para aprender a editar e criar novos topos diretamente pelo celular.</p></div>
+          </article>
+          <article class="bonus">
+            <img loading="lazy" src="https://saboreamorpaes.com.br/wp-content/uploads/2025/08/hq720-2.jpg" alt="Aula de nome em 3D no Canva" />
+            <div><span class="tag">PREMIUM</span><h3>Aula: Nome em 3D</h3><p>Passo a passo para importar a fonte e criar nome em camadas 3D no Canva.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Na prática</div>
+          <h2>Veja o tipo de resultado que você pode produzir.</h2>
+          <p>Os vídeos originais foram mantidos como demonstração, mas agora aparecem em uma seção própria em vez de interromper a oferta logo no começo.</p>
+        </div>
+        <div class="video-grid">
+          <article class="video-card">
+            <video loading="lazy" src="https://saboreamorpaes.com.br/wp-content/uploads/2025/08/Snapinsta.app_video_E74DE38E710FDC48D1D147C982F1158B_video_dashinit.mp4" autoplay muted loop playsinline controlslist="nodownload"></video>
+            <p>Demonstração de aplicação do material.</p>
+          </article>
+          <article class="video-card">
+            <video loading="lazy" src="https://saboreamorpaes.com.br/wp-content/uploads/2025/08/ssstik.io_1729196339250.mp4" autoplay muted loop playsinline controlslist="nodownload"></video>
+            <p>Exemplo visual de produção e personalização.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="oferta" class="section-soft">
+      <div class="container offer-wrap">
+        <div class="offer-visual">
+          <img loading="lazy" src="https://saboreamorpaes.com.br/wp-content/uploads/2025/09/1.000-letras-3D-prontas-para-compor-novos-topos-de-bolos-9-e-90-scaled.jpg" alt="Oferta do Pack Premium" />
+        </div>
+        <div class="offer-box">
+          <span class="offer-badge">⭐ OFERTA MAIS COMPLETA</span>
+          <h2>Pack Premium</h2>
+          <p>Para quem quer acessar os topos e também levar os materiais extras e aulas da versão mais completa.</p>
+          <ul class="offer-items">
+            <li><span class="check">✓</span><span>Biblioteca com milhares de topos de bolos</span></li>
+            <li><span class="check">✓</span><span>Pack de fontes premium</span></li>
+            <li><span class="check">✓</span><span>Letras 3D e imagens PNG</span></li>
+            <li><span class="check">✓</span><span>Mega pack de arquivos personalizados</span></li>
+            <li><span class="check">✓</span><span>Curso de edição de topos pelo celular</span></li>
+            <li><span class="check">✓</span><span>Aula para criar nomes em 3D no Canva</span></li>
+            <li><span class="check">✓</span><span>Garantia de 30 dias</span></li>
+          </ul>
+          <a class="btn btn-primary" href="https://pagamento.saboreamorpaes.com.br/checkout/192442392:1">LIBERAR ACESSO PREMIUM →</a>
+          <p class="payment-note">Você será direcionado para o checkout seguro para concluir a compra.</p>
+          <a class="alt-link" href="https://saboreamorpaes.com.br/toposdesconto/">Prefere ver a opção promocional? Clique aqui.</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-dark">
+      <div class="container">
+        <div class="guarantee">
+          <img loading="lazy" src="https://saboreamorpaes.com.br/wp-content/uploads/2025/07/garantia_absoluta.png" alt="Selo de garantia" />
+          <div>
+            <div class="kicker">GARANTIA TOTAL DE SATISFAÇÃO</div>
+            <h2>Experimente por 30 dias.</h2>
+            <p>Você pode acessar o conteúdo e os bônus e, se decidir desistir dentro do prazo informado na oferta, solicitar o reembolso conforme a garantia apresentada pela página original. Assim, você conhece o material com mais segurança.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">Dúvidas frequentes</div>
+          <h2>Antes de liberar seu acesso</h2>
+          <p>As respostas abaixo foram mantidas apenas com informações que já aparecem ou são diretamente suportadas pela página atual.</p>
+        </div>
+        <div class="faq">
+          <details open><summary>O que eu recebo no Pack Premium?</summary><p>Topos de bolos, fontes premium, letras 3D, imagens PNG, mega pack de arquivos e aulas de edição, conforme os bônus apresentados na oferta.</p></details>
+          <details><summary>Consigo aprender a editar pelo celular?</summary><p>Sim. A página atual inclui um curso de edição de topos pelo celular e uma aula específica para criar nome em 3D no Canva.</p></details>
+          <details><summary>O conteúdo serve para quem trabalha com personalizados?</summary><p>A própria oferta é apresentada para quem trabalha com papelaria e confeitaria, com arquivos, personagens, elementos, fundos e materiais de apoio para personalização.</p></details>
+          <details><summary>Existe garantia?</summary><p>Sim. A página informa uma garantia de 30 dias para solicitar devolução do valor dentro das condições apresentadas na oferta.</p></details>
+          <details><summary>Como faço para comprar?</summary><p>Clique em “Liberar acesso Premium”. O botão direciona para o mesmo checkout usado na página original.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding-top:24px">
+      <div class="container">
+        <div class="final-cta">
+          <div class="kicker">Pronto para começar?</div>
+          <h2>Tenha mais opções para criar sem precisar montar tudo do zero.</h2>
+          <p>Acesse o Pack Premium, explore o acervo e use os bônus para acelerar suas próximas personalizações.</p>
+          <a class="btn btn-primary" href="https://pagamento.saboreamorpaes.com.br/checkout/192442392:1">QUERO LIBERAR MEU ACESSO →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">© 2019–2026 Topos Editáveis. Todos os direitos reservados.</footer>
+
+  <div class="mobile-bar" aria-label="Comprar Pack Premium">
+    <div class="copy"><strong>Pack Premium</strong><span>Bônus + garantia de 30 dias</span></div>
+    <a class="btn btn-primary" href="https://pagamento.saboreamorpaes.com.br/checkout/192442392:1">QUERO ACESSAR</a>
+  </div>
+
+  <!-- Meta Pixel Code preservado da página original -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1001203303966677');
+    fbq('init','1023067816569522');
+    fbq('track','PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1001203303966677&ev=PageView&noscript=1" alt="" />
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1023067816569522&ev=PageView&noscript=1" alt="" />
+  </noscript>
+</body>
+</html>
